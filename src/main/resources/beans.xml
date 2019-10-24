@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="daoAccount" class="hibernate.dao.DaoAccount" name="daoAccount">
+    </bean>
+
+    <bean id="serviceAccount" class="hibernate.service.Service">
+        <constructor-arg ref="daoAccount"/>
+    </bean>
+
+    <bean id="daoUser" class="hibernate.dao.DaoUser" name="daoUser">
+    </bean>
+
+    <bean id="serviceUser" class="hibernate.service.ServiceUser">
+        <constructor-arg ref="daoUser"/>
+    </bean>
+
+</beans>
