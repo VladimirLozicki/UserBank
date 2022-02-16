@@ -14,7 +14,7 @@
         <hibernate-version>5.4.2.Final</hibernate-version>
         <javax.servlet>4.0.1</javax.servlet>
         <org.testng>6.14.3</org.testng>
-        <org.postgresql>42.2.2</org.postgresql>
+        <org.postgresql>42.3.3</org.postgresql>
     </properties>
 
     <dependencies>
